@@ -1,0 +1,272 @@
+/* Custom Styling */
+:root {
+    --clr-primary-tomato: #ff6257;
+
+    --clr-neutral-dark-indigo: #242742;
+    --clr-neutral-light-indigo: #36384e;
+    --clr-neutral-gray: #9294a0;
+    --clr-neutral-white: #fff;
+
+    --ff-primary: 'Roboto', sans-serif;
+}
+
+/* Reset Styling */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Typography */
+h1,
+h2 {
+    color: var(--clr-neutral-dark-indigo)
+}
+
+p {
+    color: var(--clr-neutral-light-indigo);
+}
+
+label {
+    color: var(--clr-neutral-dark-indigo);
+    font-weight: 700;
+}
+
+span {
+    color: var(--clr-neutral-dark-indigo);
+    font-weight: 700;
+}
+
+::placeholder {
+    color: var(--clr-neutral-gray);
+}
+
+/* General Styling */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff-primary);
+    background-color: var(--clr-neutral-light-indigo);
+}
+
+    /* card-front Styling */
+    .card-front {
+        background-color: var(--clr-neutral-white);
+        height: 100vh;
+    }
+
+    .card-front .container {
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+
+    .card-text {
+        margin: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .title-p {
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+
+    .list {
+        margin-bottom: 2.5rem;
+    }
+
+    .list li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .list li img {
+        margin-right: .5rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    label {
+        font-size: .9rem;
+        margin-bottom: .5rem;
+    }
+
+    input {
+        padding: 1rem 1rem 1rem 1.2rem;
+        border: 1px solid var(--clr-neutral-gray);
+        border-radius: 7px;
+        margin-bottom: 1.5rem;
+    }
+
+    .error-message {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: var(--clr-primary-tomato);
+        font-size: .9rem;
+    }
+
+    .btn {
+        background-color: var(--clr-neutral-dark-indigo);
+        color: var(--clr-neutral-white);
+        border: none;
+        border-radius: 7px;
+        padding: 1rem;
+        font-size: .9rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .subscribe-btn {
+        transition: background .5s ease-in-out;
+    }
+
+    .subscribe-btn:hover {
+        background: linear-gradient(150deg, #f74e75, #f76540)
+    }
+
+    .card-img .container {
+        margin-bottom: .5rem;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -1rem;
+        font-size: .8rem;
+        text-align: center;
+    }
+    .attribution p {
+        color: #fff;
+    }
+
+    .attribution a {
+        color: var(--clr-primary-tomato);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom .3s ease-in-out;
+    }
+
+    .attribution a:hover {
+        border-bottom: 1px solid var(--clr-primary-tomato);
+    }
+
+    /* card-back Styling */
+    .card-back {
+        background-color: #fff;
+    }
+
+    .card-back .container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: 8rem 2rem 2rem 2rem;
+        position: relative;
+    }
+
+    .card-back img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 2rem;
+    }
+
+    .card-back h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .card-back p {
+        line-height: 1.5;
+    }
+
+    .dismiss-btn {
+        position: absolute;
+        bottom: 10rem;
+        width: 100%;
+        transition: background .5s ease-in-out;
+    }
+
+    .dismiss-btn:hover {
+        background: linear-gradient(150deg, #f74e75, #f76540)
+    }
+
+/* Responsive Styling */
+@media (min-width: 48rem) {
+    body {
+        margin: 2rem;
+    }
+
+    /* card-front Styling */
+    .card-front {
+        max-width: 58rem;
+        height: auto;
+        border-radius: 30px;
+    }
+
+    .card-front .container {
+        flex-direction: row;
+        align-items: center;
+        margin: .5rem;
+    }
+
+    .card-text {
+        margin: 0 2rem;
+        width: 24rem;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+    }
+
+    .card-img img {
+        content: url(./images/illustration-sign-up-desktop.svg);
+    }
+
+    /* card-back Styling */
+    .card-back {
+        width: 32rem;
+        height: 32rem;
+        border-radius: 30px;
+    }
+
+    .card-back .container {
+        margin: 4rem;
+    }
+
+    .card-back h2 {
+        font-size: 3rem;
+    }
+
+    .card-back p {
+        margin-bottom: 12rem;
+    }
+
+    .dismiss-btn  {
+        position: relative;
+    }
+}
+
+/* JavaScript Styling */
+.hidden {
+    display: none;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+        <title>Newsletter Sign-up Form</title>
+    </head>
+    <body>
+        
+        <article class="card-front">
+            <div class="container">
+                <section class="card-text">
+                    <h1>Stay updated!</h1>
+                    <p class="title-p">Join 60,000+ product managers receiving monthly updates on:</p>
+                    <ul class="list">
+                        <li>
+                            <img src="images/icon-list.svg" alt="check">
+                            <p>Product discovery and building what matters</p>
+                        </li>
+                        <li>
+                            <img src="images/icon-list.svg" alt="check">
+                            <p>Measuring to ensure updates are a success</p>
+                        </li>
+                        <li>
+                            <img src="images/icon-list.svg" alt="check">
+                            <p>And much more!</p>
+                        </li>
+                    </ul>
+                    <form action="#">
+                        <label for="email">Email address</label>
+                        <input type="email" id="email" name="email" placeholder="email@company.com" required>
+                        <p class="error-message hidden">Valid email required</p>
+                        <button class="subscribe-btn btn" type="submit">Subscribe to monthly newsletter</button>
+                    </form>
+                </section>
+                <section class="card-img">
+                    <div class="container">
+                        <img src="images/illustration-sign-up-mobile.svg" alt="">
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <article class="card-back hidden">
+            <div class="container">
+                <img src="images/icon-success.svg" alt="check">
+                <h2>Thanks for subscribing!</h2>
+                <p>A confirmation email has been sent to <span>ash@loremcompany.com</span>. 
+                    Please open it and click the button inside to confirm your subscription.<p>
+                <button class="dismiss-btn btn">Dismiss message</button>
+            </div>
+        </article>
+
+        <div class="attribution">
+            <p>
+                Challenge by <a href="https://www.frontendmentor.io" target="_blank">Frontend Mentor</a> Coded by <a href="https://twitter.com/thomas_avelli">Thomas Avelli</a>
+            </p>
+        </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    </body>
+</html>
