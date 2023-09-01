@@ -151,7 +151,7 @@ body {
     .attribution {
         position: absolute;
         bottom: 0;
-        margin-bottom: -1rem;
+        margin-bottom: -5rem;
         font-size: .8rem;
         text-align: center;
     }
