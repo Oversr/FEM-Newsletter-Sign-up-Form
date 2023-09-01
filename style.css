@@ -149,9 +149,9 @@ body {
     }
 
     .attribution {
+        display: none;
         position: absolute;
         bottom: 0;
-        margin-bottom: -5rem;
         font-size: .8rem;
         text-align: center;
     }
@@ -242,6 +242,10 @@ body {
         content: url(./images/illustration-sign-up-desktop.svg);
     }
 
+    .attribution {
+        display: block;
+    }
+
     /* card-back Styling */
     .card-back {
         width: 32rem;
@@ -264,7 +268,6 @@ body {
     .dismiss-btn  {
         position: relative;
     }
-}
 
 /* JavaScript Styling */
 .hidden {
