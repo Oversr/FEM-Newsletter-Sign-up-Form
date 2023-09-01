@@ -220,7 +220,7 @@ body {
     /* card-front Styling */
     .card-front {
         max-width: 58rem;
-        max-height: 39em;
+        min-height: 39rem;
         border-radius: 30px;
     }
 
