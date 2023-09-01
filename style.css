@@ -61,7 +61,7 @@ body {
     /* card-front Styling */
     .card-front {
         background-color: var(--clr-neutral-white);
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .card-front .container {
