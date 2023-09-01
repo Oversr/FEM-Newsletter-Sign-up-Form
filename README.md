@@ -1,2 +1,1 @@
-# FEM-Newsletter-Sign-up-Form
- 
+Newsletter sign-up form with basic email validation and success message
